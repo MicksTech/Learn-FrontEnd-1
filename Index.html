@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sofa | Store</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" href="Sofa1.jpg" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header class="header">
-    <a href="#">Coding Year</a>
+  <header class="header" data-aos="fade">
+    <a href="#" data-aos="fade-right">Coding Year</a>
     <nav>
       <ul class="navlist">
         <li><a href="#">Home</a></li>
@@ -20,12 +21,12 @@
         <li><a href="#">Blog</a></li>
       </ul>
     </nav>
-    <button>Contact Us</button>
+    <button data-aos="fade-left">Contact Us</button>
   </header>
 
   <main class="content">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <a href="#">View Products</a>
+    <p data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="#" data-aos="zoom-in">View Products</a>
   </main>
 
   <section class="content-choice">
@@ -33,17 +34,17 @@
     <p>lorem ipsum &nbsp; | &nbsp; consectetur adipiscing &nbsp; | &nbsp; dolor sit</p>
     
     <div class="change-color">
-      <div class="divided">
-        <img src="Sofa1.jpg" alt="sofa" />
+      <div class="divided" data-aos="fade-right">
+        <img src="Sofa1.jpg" alt="sofa"  />
         <h2>Lorem</h2>
         <button>Know More</button>
       </div>
-      <div class="divided">
+      <div class="divided" data-aos="zoom-in">
         <img src="sofa4.jpg" alt="sofa" />
         <h2>Ipsum</h2>
         <button>Know More</button>
       </div>
-      <div class="divided">
+      <div class="divided" data-aos="fade-left">
         <img src="sofa3.jpg" alt="sofa" />
         <h2>Consectetur</h2>
         <button>Know More</button>
@@ -55,19 +56,19 @@
   </section>
 
   <section class="content-about">
-    <div class="content-img">
+    <div class="content-img" data-aos="fade-right">
       <h2>About Us?</h2>
       <img src="sofa3.jpg" alt="About" />
     </div>
-    <div class="content-p">
+    <div class="content-p" data-aos="fade-left">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati explicabo aperiam dolorem qui quos, impedit maiores nisi sit veritatis molestiae cupiditate corrupti fugiat, magnam repellat mollitia sunt corporis delectus!</p>
       <a href="#">Learn More</a>
     </div>
   </section>
 
   <main class="content">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <a href="#">View Products</a>
+    <p data-aos="zoom-in">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="#" data-aos="zoom-in">View Products</a>
   </main>
 
   <footer>
@@ -111,5 +112,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
