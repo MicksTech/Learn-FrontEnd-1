@@ -212,6 +212,10 @@ footer {
   margin-right: 10px;
 }
 
+.social-media p{
+    font-size: 0.9rem;
+}
+
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
   .header {
