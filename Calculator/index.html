@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-calculator">
+            <input type="text" id="inp" placeholder="Enter value...." readonly>
+            <div class="type-number1">
+                <button type="button" id="change1" onclick="cancel()">AC</button>
+                <button type="button" id="change2" onclick="remove()">DEL</button>
+                <button type="button" id="change3" onclick="AT_add('%')">%</button>
+                <button type="button" id="sign1" onclick="AT_add('/')">/</button>
+            </div>
+            <div class="type-number2">
+                <button type="button" onclick="AT_add(7)">7</button>
+                <button type="button" onclick="AT_add(8)">8</button>
+                <button type="button" onclick="AT_add(9)">9</button>
+                <button type="button" id="sign2" onclick="AT_add('*')">*</button>
+            </div>
+            <div class="type-number3">
+                <button type="button" onclick="AT_add(6)">6</button>
+                <button type="button" onclick="AT_add(5)">5</button>
+                <button type="button" onclick="AT_add(4)">4</button>
+                <button type="button" id="sign3" onclick="AT_add('-')">-</button>
+            </div>
+            <div class="type-number4">
+                <button type="button" onclick="AT_add(1)">1</button>
+                <button type="button" onclick="AT_add(2)">2</button>
+                <button type="button" onclick="AT_add(3)">3</button>
+                <button type="button" id="sign4" onclick="AT_add('+')">+</button>
+            </div>
+            <div class="type-number5">
+                <button type="submit" id="zero" onclick="AT_add(0)">0</button>
+                <button type="submit" onclick="AT_add('.')">.</button>
+                <button type="submit" id="sign5" onclick="exe()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
