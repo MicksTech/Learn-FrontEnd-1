@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 50px;
+            height: 100px;
+        }
+
+        .paragraph{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Javascript Learning</h2>
+
+    <p id="demo">Javascript can change HTML content</p>
+
+    <p class="paragraph" id="block">Hello world</p>
+
+    <p id="fontSize">Hello</p>
+
+    <button type="button" onclick="document.getElementById('block').style.display = 'block'">Click me</button>
+
+    <button type="button" onclick="document.getElementById('demo').style.display = 'none';">Click me</button>
+
+    <button type="button" onclick="document.getElementById('fontSize').style.fontSize = '35px';">Click me</button>
+
+    <button type="button" onclick="document.getElementById('myImage').src='img_bulboff.gif'">Turn on the light</button>
+
+    <img id="myImage" src="img_bulboff.gif" alt="">
+
+    <button type="button" onclick="document.getElementById('myImagLie').src='img_bulboff.gif'">Turn off the light</button>
+    <script src="practice.js"></script>
+</body>
+
+</html>

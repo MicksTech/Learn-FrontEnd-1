@@ -1,9 +1,3 @@
-AOS.init({
-    duration: 1000,
-    once: true
-});
-
-
 const humburger = document.querySelector('.humburger');
 const navlist = document.querySelector('.navlist');
 
