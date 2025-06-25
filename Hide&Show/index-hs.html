@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style-hs.css">
+    <title>Hide & Show | Password</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2>Welcome Back!</h2>
+            <form action="lading.html" class="form-page">
+                <div class="username">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username" placeholder="johnDoe@gmail.com" required>
+                </div>
+
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="********" required>
+                    <div class="checkbox">
+                        <input type="checkbox" id="show-password" onclick="show()">
+                        <label for="show-password">Show password</label>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit" onclick="Login()">Login</button>
+                </div>
+
+                <div class="icon">
+                    <i class="bx bxl-facebook-circle"></i>
+                    <i class="bx bxl-pinterest"></i>
+                    <i class="bx bxl-instagram"></i>
+                </div>
+
+                <div class="plink">
+                    <p>Already have an accoount</p>
+                    <a href="#">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script-hs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 10px 20px;
+}
+
+.login-container{
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(2px 2px 2px gray);
+    border: 2px solid white;
+}
+
+.login-container h2{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px auto;
+    text-transform: capitalize;
+}
+
+.form-page{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+}
+
+.username{
+    margin: 10px 20px 10px 10px;
+}
+
+.username label{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.username input{
+    width: 250px;
+    height: 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+}
+
+.password{
+    margin: 30px 20px 10px 10px;
+}
+
+.password  label{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.password input{
+    width: 250px;
+    height: 35px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+}
+
+.checkbox{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    position: relative;
+    left: 120px;
+}
+
+.checkbox label{
+    position: relative;
+    left: 120px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 250px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    align-items: center;
+}
+
+i{
+    color: gray;
+    font-size: 1.9rem;
+}
+
+.plink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+a{
+    font-size: 0.9rem;
+}
