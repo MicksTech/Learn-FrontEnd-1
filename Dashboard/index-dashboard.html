@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+        integrity="sha512-qD1xyDQEJ3Hl+j0qzLEbl38M0WmRLjwAYxLbdm9D7AqqGyq2q+UgMPzfgkGyVKoQ8CPIKi9gxMiDc7sd0dj1WQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Add Chart.js for graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style-dashbooard.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <aside class="sidebar" data-aos="fade-right">
+        <div class="sidebar-header">
+            <a href="#">
+                <i class="fas fa-chart-pie"></i>
+                <span>AnalyticsPro</span>
+            </a>
+        </div>
+
+        <nav>
+            <ul class="sidebar_menu">
+                <li>
+                    <a href="#" class="active">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-box-open"></i>
+                        <span>Products</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Sales</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div class="main">
+        <header class="header">
+            <h2>Dashboard Overview</h2>
+            <div class="user-profile">
+                <div class="user-info">
+                    <h4>John Michael</h4>
+                    <p>Administrator</p>
+                </div>
+                <img src="https://scontent.fmnl17-7.fna.fbcdn.net/v/t39.30808-6/512219418_1797797804281761_7349216020316820120_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHrSms5OshQ_0RHCo5Ew6iSxWqBonPzx_jFaoGic_PH-JkIAqmKukskxwbamtEkTlbczPFYFFPy2SkkHlXdk8rJ&_nc_ohc=3ruDNUHkXisQ7kNvwHjpWBN&_nc_oc=Adnzkxu0uwevW1HfIhzFGImlvcSwYe5PQIHFfcp88T5hCcqYQQr9zRFWe7-pWJZlRG4&_nc_zt=23&_nc_ht=scontent.fmnl17-7.fna&_nc_gid=payPXDuQApgoOHL9XbAZpA&oh=00_AfMLbvA9qtq-Bbth04ff2KXYeon1tQZTlFMce8J0uIRBdg&oe=68646388" alt="User Profile">
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="card users" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card-header">
+                    <div class="card-info">
+                        <h3>Total Users</h3>
+                        <p>1,542</p>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+                <div class="card-progress">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>12.5% from last month</span>
+                </div>
+            </div>
+
+            <div class="card products" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card-header">
+                    <div class="card-info">
+                        <h3>Products</h3>
+                        <p>328</p>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                </div>
+                <div class="card-progress">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>5.2% new products</span>
+                </div>
+            </div>
+
+            <div class="card sales" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card-header">
+                    <div class="card-info">
+                        <h3>Total Sales</h3>
+                        <p>$24,780</p>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="card-progress">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>8.7% growth</span>
+                </div>
+            </div>
+
+            <div class="card messages" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card-header">
+                    <div class="card-info">
+                        <h3>Messages</h3>
+                        <p>24</p>
+                    </div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                </div>
+                <div class="card-progress">
+                    <i class="fas fa-arrow-down"></i>
+                    <span>3.2% less than yesterday</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data visualization section -->
+        <div class="content">
+            <div class="data-card" data-aos="fade-up">
+                <h3><i class="fas fa-chart-line"></i> Sales Analytics</h3>
+                <div class="graph-container">
+                    <canvas id="salesChart"></canvas>
+                </div>
+            </div>
+
+            <div class="data-card" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-calendar-alt"></i> Calendar</h3>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                        <h4 id="current-month">June 2023</h4>
+                        <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-grid" id="calendar-days-header">
+                        <div class="calendar-day-header">Sun</div>
+                        <div class="calendar-day-header">Mon</div>
+                        <div class="calendar-day-header">Tue</div>
+                        <div class="calendar-day-header">Wed</div>
+                        <div class="calendar-day-header">Thu</div>
+                        <div class="calendar-day-header">Fri</div>
+                        <div class="calendar-day-header">Sat</div>
+                    </div>
+                    <div class="calendar-grid" id="calendar-days"></div>
+                </div>
+
+                <h3 style="margin-top: 30px;"><i class="fas fa-bell"></i> Recent Activity</h3>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="activity-info">
+                            <h4>New user registered</h4>
+                            <p>John Smith joined the system</p>
+                        </div>
+                        <div class="activity-time">2h ago</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon"
+                            style="background-color: rgba(33, 150, 243, 0.1); color: var(--secondary-color);">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="activity-info">
+                            <h4>New order received</h4>
+                            <p>Order #1245 for $245.99</p>
+                        </div>
+                        <div class="activity-time">5h ago</div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-icon"
+                            style="background-color: rgba(255, 152, 0, 0.1); color: var(--accent-color);">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="activity-info">
+                            <h4>Order shipped</h4>
+                            <p>Order #1242 has been shipped</p>
+                        </div>
+                        <div class="activity-time">1d ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script-dashboard.js"></script>
+</body>
+
+</html>
