@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-popup.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <button id="book-now" class="bounce">Book Now</button>
+
+  <div id="popup" class="Pop-up">
+    <div class="popup-content">
+      <span class="close">&times;</span>
+      <h2>Book Now</h2>
+      <form id="booking-form">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="name" name="name" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Phone</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="date">Date</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-calendar-days"></i>
+            <input type="date" id="date" name="date" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="time">Time</label>
+          <div class="input-with-icon">
+            <i class="fa-solid fa-clock"></i>
+            <input type="time" id="time" name="time" required />
+          </div>
+        </div>
+
+        <button class="button" type="submit">Book &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+    <script src="script-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"
+        integrity="sha512-qD1xyDQEJ3Hl+j0qzLEbl38M0WmRLjwAYxLbdm9D7AqqGyq2q+UgMPzfgkGyVKoQ8CPIKi9gxMiDc7sd0dj1WQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
