@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+h2{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.container-graph{
+    height: 95vh;
+    width: 100%;
+    max-width: 1000px;
+    background: #f5f5;
+    filter: drop-shadow(1px 2px 5px gray);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    .container-graph{
+        min-height: 50vh;
+        margin: 20px 20px;
+    }
+}
